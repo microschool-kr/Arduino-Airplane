@@ -25,18 +25,10 @@ void setup() {
   fullScreen(P3D);
   mesh=(TriangleMesh)new STLReader().loadBinary(sketchPath("airplane.stl"),STLReader.TRIANGLEMESH);
   gfx=new ToxiclibsSupport(this);
-
-  // display serial port list for debugging/clarity
-  //println(Serial.list());
-
-  // get the first available port (use EITHER this OR the specific port code below)
-  //String portName = Serial.list()[0];
-  
-  // get a specific serial port (use EITHER this OR the first-available code above)
-  //String portName = "COM9";
   
   // open the serial port
-  //port = new Serial(this, "COM3", 115200);
+  // change "COM3" to your arduino port name such as "COM~" in Windows, "/dev/tty~~~" in Mac
+  port = new Serial(this, "COM3", 115200);
   
   // send single character to trigger DMP init/start
   // (expected by MPU6050_DMP6 example Arduino sketch)
