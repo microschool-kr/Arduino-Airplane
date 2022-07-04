@@ -9,7 +9,7 @@ Arduino airplane with MPU-6050(GY-521) 6DOF sensor and SG90 servo motor and visu
 1. processing 설치
 2. processing 라이브러리 폴더에 toxiclibs_p5, toxiclibscore 추가
 - 라이브러리 폴더 경로
--- Windows : C:\Users\<username>\Documents\Processing\libraries
--- Mac : Users\<username>\Documents\Processing\libraries
---- <username>에 자신의 사용자 이름을 넣어주세요.
+  - Windows : C:\Users\\<username\>\Documents\Processing\libraries
+  - Mac : Users\\<username\>\Documents\Processing\libraries
+    - \<username\>에 자신의 사용자 이름을 넣어주세요.
 3. arduino_airplane_processing.pde 파일 실행
