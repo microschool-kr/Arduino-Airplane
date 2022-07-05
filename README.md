@@ -18,5 +18,5 @@ Arduino airplane with MPU-6050(GY-521) 6DOF sensor and SG90 servo motor and visu
   - Mac : Users\\<username\>\Documents\Processing\libraries
     - \<username\>에 자신의 사용자 이름을 넣어주세요.
 3. arduino_airplane_processing.pde 파일 실행
-4. 39번줄 port = new Serial(this, "/dev/cu.usbserial-120", 115200); 에서 ""안을 자신의 아두이노 포트 이름으로 수정 (윈도우일 경우 COM숫자)
+4. 31번줄 `port = new Serial(this, "/dev/cu.usbserial-120", 115200);` 에서 ""안을 자신의 아두이노 포트 이름으로 수정 (윈도우일 경우 COM숫자)
 5. 재생버튼 눌러서 실행
