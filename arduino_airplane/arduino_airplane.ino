@@ -1,11 +1,5 @@
-//#include <I2Cdev.h>
-//#include <helper_3dmath.h>
-//#include <MPU6050.h>
 #include <MPU6050_6Axis_MotionApps_V6_12.h>
-
-//#include "I2Cdev.h"
-#include "Wire.h"
-#include "Servo.h"
+#include <Servo.h>
 
 MPU6050 mpu;
 
@@ -59,9 +53,6 @@ void setup()
 
   // wait for ready
   Serial.println(F("\nSend any character to begin DMP programming and demo: "));
-  while (Serial.available() && Serial.read()); // empty buffer
-  while (!Serial.available());                 // wait for data
-  while (Serial.available() && Serial.read()); // empty buffer again
 
   // load and configure the DMP
   Serial.println(F("Initializing DMP..."));
